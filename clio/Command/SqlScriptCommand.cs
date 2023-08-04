@@ -4,7 +4,9 @@ using System.IO;
 using Clio.Common;
 using CommandLine;
 using ConsoleTables;
-
+//using DocumentFormat.OpenXml;
+//using DocumentFormat.OpenXml.Packaging;
+//using DocumentFormat.OpenXml.Spreadsheet;
 using Newtonsoft.Json;
 
 namespace Clio.Command.SqlScriptCommand
@@ -60,7 +62,7 @@ namespace Clio.Command.SqlScriptCommand
 			} else if (viewType.ToLower() == "csv") {
 				SaveDataTableToCsv(dataTable, filePath);
 			} else if (viewType.ToLower() == "xlsx") {
-				SaveDataTableToXlsx(dataTable, filePath);
+				//SaveDataTableToXlsx(dataTable, filePath);
 			} else {
 				if (filePath != null) {
 					File.WriteAllText(filePath, serverResponse);
@@ -102,42 +104,42 @@ namespace Clio.Command.SqlScriptCommand
 			}
 		}
 
-		static void SaveDataTableToXlsx(DataTable dataTable, string filePath) {
-			//using (SpreadsheetDocument spreadsheetDocument = SpreadsheetDocument.Create(filePath,
-			//		SpreadsheetDocumentType.Workbook)) {
-			//	WorkbookPart workbookPart = spreadsheetDocument.AddWorkbookPart();
-			//	workbookPart.Workbook = new Workbook();
-			//	WorksheetPart worksheetPart = workbookPart.AddNewPart<WorksheetPart>();
-			//	worksheetPart.Worksheet = new Worksheet(new SheetData());
-			//	Sheets sheets = spreadsheetDocument.WorkbookPart.Workbook.AppendChild(new Sheets());
-			//	string sheetName = "Sheet1";
-			//	uint sheetId = 1;
-			//	Sheet sheet = new Sheet() { Id = spreadsheetDocument.WorkbookPart.GetIdOfPart(worksheetPart),
-			//		SheetId = sheetId, Name = sheetName };
-			//	sheets.Append(sheet);
-			//	SheetData sheetData = worksheetPart.Worksheet.GetFirstChild<SheetData>();
-			//	Row headerRow = new Row();
-			//	foreach (DataColumn column in dataTable.Columns) {
-			//		Cell cell = new Cell();
-			//		cell.DataType = CellValues.String;
-			//		cell.CellValue = new CellValue(column.ColumnName);
-			//		headerRow.AppendChild(cell);
-			//	}
-			//	sheetData.AppendChild(headerRow);
-			//	foreach (DataRow row in dataTable.Rows) {
-			//		Row dataRow = new Row();
-			//		foreach (var item in row.ItemArray) {
-			//			Cell cell = new Cell();
-			//			cell.DataType = CellValues.String;
-			//			cell.CellValue = new CellValue(item.ToString());
-			//			dataRow.AppendChild(cell);
-			//		}
-			//		sheetData.AppendChild(dataRow);
-			//	}
-			//	workbookPart.Workbook.Save();
-			//	spreadsheetDocument.Close();
-			//}
-		}
+		//static void SaveDataTableToXlsx(DataTable dataTable, string filePath) {
+		//	using (SpreadsheetDocument spreadsheetDocument = SpreadsheetDocument.Create(filePath,
+		//			SpreadsheetDocumentType.Workbook)) {
+		//		WorkbookPart workbookPart = spreadsheetDocument.AddWorkbookPart();
+		//		workbookPart.Workbook = new Workbook();
+		//		WorksheetPart worksheetPart = workbookPart.AddNewPart<WorksheetPart>();
+		//		worksheetPart.Worksheet = new Worksheet(new SheetData());
+		//		Sheets sheets = spreadsheetDocument.WorkbookPart.Workbook.AppendChild(new Sheets());
+		//		string sheetName = "Sheet1";
+		//		uint sheetId = 1;
+		//		Sheet sheet = new Sheet() { Id = spreadsheetDocument.WorkbookPart.GetIdOfPart(worksheetPart),
+		//			SheetId = sheetId, Name = sheetName };
+		//		sheets.Append(sheet);
+		//		SheetData sheetData = worksheetPart.Worksheet.GetFirstChild<SheetData>();
+		//		Row headerRow = new Row();
+		//		foreach (DataColumn column in dataTable.Columns) {
+		//			Cell cell = new Cell();
+		//			cell.DataType = CellValues.String;
+		//			cell.CellValue = new CellValue(column.ColumnName);
+		//			headerRow.AppendChild(cell);
+		//		}
+		//		sheetData.AppendChild(headerRow);
+		//		foreach (DataRow row in dataTable.Rows) {
+		//			Row dataRow = new Row();
+		//			foreach (var item in row.ItemArray) {
+		//				Cell cell = new Cell();
+		//				cell.DataType = CellValues.String;
+		//				cell.CellValue = new CellValue(item.ToString());
+		//				dataRow.AppendChild(cell);
+		//			}
+		//			sheetData.AppendChild(dataRow);
+		//		}
+		//		workbookPart.Workbook.Save();
+		//		spreadsheetDocument.Close();
+		//	}
+		//}
 
 		public override int Execute(ExecuteSqlScriptOptions opts) {
 			try {
