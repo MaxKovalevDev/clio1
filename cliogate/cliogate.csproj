@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net472</TargetFrameworks>
+    <ProjectGuid>{E24226F9-C177-458F-AF34-9338E2699983}</ProjectGuid>
+    <OutputPath Condition="'$(TargetFramework)' == 'net472'">Files\Bin\</OutputPath>
+    <OutputPath Condition="'$(TargetFramework)' == 'netstandard2.0'">Files\Bin\netstandard\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(AssemblyName)'!=''">
+      <PropertyGroup>
+        <AssemblyName Condition="'$(TargetFramework)' == 'net472'">cliogate</AssemblyName>
+        <AssemblyName Condition="'$(TargetFramework)' == 'netstandard2.0'">cliogate_netcore</AssemblyName>
+      </PropertyGroup>
+    </When>
+  </Choose>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net472|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Label="TemplateBuilder">
+    <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\TemplateBuilder.1.1.6.1\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
+    <CodeAnalysisRuleSet>cliogate.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <!-- ##BpmonlineSDKMarker## -->
+  <ItemGroup>
+    <Content Include="Files\tpl\*.*" />
+    <Content Include="Assemblies\**\*.*" />
+    <Content Include="Data\**\*.*" />
+    <Content Include="Resources\**\*.*" />
+    <Content Include="Schemas\**\*.*" />
+    <Content Include="SqlScripts\**\*.*" />
+  </ItemGroup>
+  <!-- ##BpmonlineSDKMarker## -->
+  <ItemGroup>
+    <None Include="descriptor.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Schemas\**\*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\.sonarlint\clio\CSharp\SonarLint.xml" Link="SonarLint.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CreatioSDK" Version="8.0.3.1759" />
+    <PackageReference Include="ATF.Repository" Version="2.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.CodeDom" Version="5.0.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="NLogExt">
+      <HintPath>Files\Libs\NLogExt.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(TargetFramework)'=='netstandard2.0'">
+      <ItemGroup>
+        <PackageReference Include="Terrasoft.ServiceModel" Version="1.0.0" />
+        <PackageReference Include="Terrasoft.ServiceModel.Primitives" Version="1.0.0">
+          <Private>False</Private>
+        </PackageReference>
+      </ItemGroup>
+    </When>
+    <When Condition="'$(TargetFramework)'=='net472'">
+      <ItemGroup>
+        <Reference Include="System.ServiceModel" />
+        <Reference Include="System.ServiceModel.Activation" />
+        <Reference Include="System.ServiceModel.Web" />
+      </ItemGroup>
+    </When>
+  </Choose>
+  <!--Move to Package reference, when ATF.Repository will be built against netstandard-->
+</Project>
