@@ -1,0 +1,567 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "ATF.Repository/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "4.4.1",
+          "Common.Logging": "3.4.1",
+          "CreatioSDK": "7.17.4.2265",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.6",
+          "Newtonsoft.Json": "12.0.3",
+          "creatio.client": "1.0.7"
+        },
+        "compile": {
+          "lib/netstandard2.0/ATF.Repository.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ATF.Repository.dll": {}
+        }
+      },
+      "Castle.Core/4.4.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Castle.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Castle.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Common.Logging/3.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Common.Logging.Core": "3.4.1"
+        },
+        "compile": {
+          "lib/net40/Common.Logging.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/Common.Logging.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Common.Logging.Core/3.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1"
+        },
+        "compile": {
+          "lib/net40/Common.Logging.Core.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net40/Common.Logging.Core.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "creatio.client/1.0.7": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Creatio.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Creatio.Client.dll": {}
+        }
+      },
+      "CreatioSDK/8.0.3.1759": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Creatio.FeatureToggling.dll": {},
+          "lib/net40/Quartz.dll": {},
+          "lib/net40/ServiceStack.Interfaces.dll": {},
+          "lib/net40/Terrasoft.Common.dll": {},
+          "lib/net40/Terrasoft.Core.ConfigurationBuild.dll": {},
+          "lib/net40/Terrasoft.Core.DI.dll": {},
+          "lib/net40/Terrasoft.Core.Packages.dll": {},
+          "lib/net40/Terrasoft.Core.Process.dll": {},
+          "lib/net40/Terrasoft.Core.Scheduler.dll": {},
+          "lib/net40/Terrasoft.Core.ScriptEngine.dll": {},
+          "lib/net40/Terrasoft.Core.ServiceModelContract.dll": {},
+          "lib/net40/Terrasoft.Core.Translation.dll": {},
+          "lib/net40/Terrasoft.Core.dll": {},
+          "lib/net40/Terrasoft.File.Abstractions.dll": {},
+          "lib/net40/Terrasoft.File.dll": {},
+          "lib/net40/Terrasoft.GlobalSearch.dll": {},
+          "lib/net40/Terrasoft.GoogleServerConnector.dll": {},
+          "lib/net40/Terrasoft.GoogleServices.dll": {},
+          "lib/net40/Terrasoft.IO.dll": {},
+          "lib/net40/Terrasoft.Messaging.Common.Standard.dll": {},
+          "lib/net40/Terrasoft.Messaging.Common.dll": {},
+          "lib/net40/Terrasoft.Mobile.dll": {},
+          "lib/net40/Terrasoft.Monitoring.dll": {},
+          "lib/net40/Terrasoft.Nui.ServiceModel.dll": {},
+          "lib/net40/Terrasoft.Nui.dll": {},
+          "lib/net40/Terrasoft.Reports.dll": {},
+          "lib/net40/Terrasoft.Security.Secrets.dll": {},
+          "lib/net40/Terrasoft.Services.dll": {},
+          "lib/net40/Terrasoft.Social.dll": {},
+          "lib/net40/Terrasoft.Sync.dll": {},
+          "lib/net40/Terrasoft.Web.Common.dll": {},
+          "lib/net40/Terrasoft.Web.Http.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Creatio.FeatureToggling.dll": {},
+          "lib/net40/Quartz.dll": {},
+          "lib/net40/ServiceStack.Interfaces.dll": {},
+          "lib/net40/Terrasoft.Common.dll": {},
+          "lib/net40/Terrasoft.Core.ConfigurationBuild.dll": {},
+          "lib/net40/Terrasoft.Core.DI.dll": {},
+          "lib/net40/Terrasoft.Core.Packages.dll": {},
+          "lib/net40/Terrasoft.Core.Process.dll": {},
+          "lib/net40/Terrasoft.Core.Scheduler.dll": {},
+          "lib/net40/Terrasoft.Core.ScriptEngine.dll": {},
+          "lib/net40/Terrasoft.Core.ServiceModelContract.dll": {},
+          "lib/net40/Terrasoft.Core.Translation.dll": {},
+          "lib/net40/Terrasoft.Core.dll": {},
+          "lib/net40/Terrasoft.File.Abstractions.dll": {},
+          "lib/net40/Terrasoft.File.dll": {},
+          "lib/net40/Terrasoft.GlobalSearch.dll": {},
+          "lib/net40/Terrasoft.GoogleServerConnector.dll": {},
+          "lib/net40/Terrasoft.GoogleServices.dll": {},
+          "lib/net40/Terrasoft.IO.dll": {},
+          "lib/net40/Terrasoft.Messaging.Common.Standard.dll": {},
+          "lib/net40/Terrasoft.Messaging.Common.dll": {},
+          "lib/net40/Terrasoft.Mobile.dll": {},
+          "lib/net40/Terrasoft.Monitoring.dll": {},
+          "lib/net40/Terrasoft.Nui.ServiceModel.dll": {},
+          "lib/net40/Terrasoft.Nui.dll": {},
+          "lib/net40/Terrasoft.Reports.dll": {},
+          "lib/net40/Terrasoft.Security.Secrets.dll": {},
+          "lib/net40/Terrasoft.Services.dll": {},
+          "lib/net40/Terrasoft.Social.dll": {},
+          "lib/net40/Terrasoft.Sync.dll": {},
+          "lib/net40/Terrasoft.Web.Common.dll": {},
+          "lib/net40/Terrasoft.Web.Http.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.6": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.CodeDom/5.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ATF.Repository/2.0.1": {
+      "sha512": "rv8jfRf2URTWgnVmlwrpXMI+c1CNMBBnXLBertHTyHqfLsbPnwTxpJ6DmG1W/DrO2eIoWoBDjRbKVi8ky4svmg==",
+      "type": "package",
+      "path": "atf.repository/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "atf.repository.2.0.1.nupkg.sha512",
+        "atf.repository.nuspec",
+        "lib/netstandard2.0/ATF.Repository.dll"
+      ]
+    },
+    "Castle.Core/4.4.1": {
+      "sha512": "zanbjWC0Y05gbx4eGXkzVycOQqVOFVeCjVsDSyuao9P4mtN1w3WxxTo193NGC7j3o2u3AJRswaoC6hEbnGACnQ==",
+      "type": "package",
+      "path": "castle.core/4.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ASL - Apache Software Foundation License.txt",
+        "CHANGELOG.md",
+        "LICENSE",
+        "castle.core.4.4.1.nupkg.sha512",
+        "castle.core.nuspec",
+        "lib/net35/Castle.Core.dll",
+        "lib/net35/Castle.Core.xml",
+        "lib/net40/Castle.Core.dll",
+        "lib/net40/Castle.Core.xml",
+        "lib/net45/Castle.Core.dll",
+        "lib/net45/Castle.Core.xml",
+        "lib/netstandard1.3/Castle.Core.dll",
+        "lib/netstandard1.3/Castle.Core.xml",
+        "lib/netstandard1.5/Castle.Core.dll",
+        "lib/netstandard1.5/Castle.Core.xml",
+        "readme.txt"
+      ]
+    },
+    "Common.Logging/3.4.1": {
+      "sha512": "5eZ/vgEOqzLg4PypZqnJ+wMhhgHyckicbZY4iDxqQ4FtOz0CpdYZ0xQ78aszMzeAJZiLLb5VdR9tPfunVQLz6g==",
+      "type": "package",
+      "path": "common.logging/3.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "common.logging.3.4.1.nupkg.sha512",
+        "common.logging.nuspec",
+        "lib/net35/Common.Logging.dll",
+        "lib/net35/Common.Logging.pdb",
+        "lib/net35/Common.Logging.xml",
+        "lib/net40/Common.Logging.dll",
+        "lib/net40/Common.Logging.pdb",
+        "lib/net40/Common.Logging.xml",
+        "lib/netstandard1.3/Common.Logging.dll",
+        "lib/netstandard1.3/Common.Logging.pdb",
+        "lib/netstandard1.3/Common.Logging.xml"
+      ]
+    },
+    "Common.Logging.Core/3.4.1": {
+      "sha512": "wLHldZHvxsSD6Ahonfj00/SkfHfKqO+YT6jsUwVm8Rch1REL9IArHAcSLXxYxYfu5/4ydGtmXvOtaH3AkVPu0A==",
+      "type": "package",
+      "path": "common.logging.core/3.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "common.logging.core.3.4.1.nupkg.sha512",
+        "common.logging.core.nuspec",
+        "lib/net40/Common.Logging.Core.XML",
+        "lib/net40/Common.Logging.Core.dll",
+        "lib/net40/Common.Logging.Core.pdb",
+        "lib/netstandard1.0/Common.Logging.Core.dll",
+        "lib/netstandard1.0/Common.Logging.Core.pdb",
+        "lib/netstandard1.0/Common.Logging.Core.xml",
+        "lib/portable-win+net40+sl40+wp7+wpa81/Common.Logging.Core.XML",
+        "lib/portable-win+net40+sl40+wp7+wpa81/Common.Logging.Core.dll",
+        "lib/portable-win+net40+sl40+wp7+wpa81/Common.Logging.Core.pdb"
+      ]
+    },
+    "creatio.client/1.0.7": {
+      "sha512": "NrDsZ2clIHBilivdrOL8mi5Qq7uDDkemEbN/C//z/euPzs9tRvtGcKIfTye+Aapm+/pmZH3gW9PU5cDaLl3zBg==",
+      "type": "package",
+      "path": "creatio.client/1.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "creatio.client.1.0.7.nupkg.sha512",
+        "creatio.client.nuspec",
+        "lib/netstandard2.0/Creatio.Client.dll"
+      ]
+    },
+    "CreatioSDK/8.0.3.1759": {
+      "sha512": "gtLfFbsqarrTLlWlEzXYGB+frMpgf63u6Lyp6y44MsQfiT6OP9Ab3Ya1rgZA2ISVBQqnhYm7pkTvciVGn/Idjw==",
+      "type": "package",
+      "path": "creatiosdk/8.0.3.1759",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "creatiosdk.8.0.3.1759.nupkg.sha512",
+        "creatiosdk.nuspec",
+        "lib/net40/Creatio.FeatureToggling.dll",
+        "lib/net40/Quartz.dll",
+        "lib/net40/ServiceStack.Interfaces.dll",
+        "lib/net40/Terrasoft.Common.dll",
+        "lib/net40/Terrasoft.Core.ConfigurationBuild.dll",
+        "lib/net40/Terrasoft.Core.DI.dll",
+        "lib/net40/Terrasoft.Core.Packages.dll",
+        "lib/net40/Terrasoft.Core.Process.dll",
+        "lib/net40/Terrasoft.Core.Scheduler.dll",
+        "lib/net40/Terrasoft.Core.ScriptEngine.dll",
+        "lib/net40/Terrasoft.Core.ServiceModelContract.dll",
+        "lib/net40/Terrasoft.Core.Translation.dll",
+        "lib/net40/Terrasoft.Core.dll",
+        "lib/net40/Terrasoft.File.Abstractions.dll",
+        "lib/net40/Terrasoft.File.dll",
+        "lib/net40/Terrasoft.GlobalSearch.dll",
+        "lib/net40/Terrasoft.GoogleServerConnector.dll",
+        "lib/net40/Terrasoft.GoogleServices.dll",
+        "lib/net40/Terrasoft.IO.dll",
+        "lib/net40/Terrasoft.Messaging.Common.Standard.dll",
+        "lib/net40/Terrasoft.Messaging.Common.dll",
+        "lib/net40/Terrasoft.Mobile.dll",
+        "lib/net40/Terrasoft.Monitoring.dll",
+        "lib/net40/Terrasoft.Nui.ServiceModel.dll",
+        "lib/net40/Terrasoft.Nui.dll",
+        "lib/net40/Terrasoft.Reports.dll",
+        "lib/net40/Terrasoft.Security.Secrets.dll",
+        "lib/net40/Terrasoft.Services.dll",
+        "lib/net40/Terrasoft.Social.dll",
+        "lib/net40/Terrasoft.Sync.dll",
+        "lib/net40/Terrasoft.Web.Common.dll",
+        "lib/net40/Terrasoft.Web.Http.Abstractions.dll",
+        "lib/netstandard2.0/Creatio.FeatureToggling.dll",
+        "lib/netstandard2.0/Quartz.dll",
+        "lib/netstandard2.0/Terrasoft.Common.dll",
+        "lib/netstandard2.0/Terrasoft.Core.ConfigurationBuild.dll",
+        "lib/netstandard2.0/Terrasoft.Core.DI.dll",
+        "lib/netstandard2.0/Terrasoft.Core.Packages.dll",
+        "lib/netstandard2.0/Terrasoft.Core.Process.dll",
+        "lib/netstandard2.0/Terrasoft.Core.Scheduler.dll",
+        "lib/netstandard2.0/Terrasoft.Core.ScriptEngine.dll",
+        "lib/netstandard2.0/Terrasoft.Core.ServiceModelContract.dll",
+        "lib/netstandard2.0/Terrasoft.Core.Translation.dll",
+        "lib/netstandard2.0/Terrasoft.Core.dll",
+        "lib/netstandard2.0/Terrasoft.File.Abstractions.dll",
+        "lib/netstandard2.0/Terrasoft.File.dll",
+        "lib/netstandard2.0/Terrasoft.GoogleServerConnector.dll",
+        "lib/netstandard2.0/Terrasoft.IO.dll",
+        "lib/netstandard2.0/Terrasoft.Messaging.Common.Standard.dll",
+        "lib/netstandard2.0/Terrasoft.Monitoring.dll",
+        "lib/netstandard2.0/Terrasoft.Nui.ServiceModel.dll",
+        "lib/netstandard2.0/Terrasoft.Nui.dll",
+        "lib/netstandard2.0/Terrasoft.Security.Secrets.dll",
+        "lib/netstandard2.0/Terrasoft.ServiceModel.Primitives.dll",
+        "lib/netstandard2.0/Terrasoft.Web.Common.dll",
+        "lib/netstandard2.0/Terrasoft.Web.Http.Abstractions.dll",
+        "license.txt",
+        "logo.png"
+      ]
+    },
+    "Microsoft.CSharp/4.0.1": {
+      "sha512": "17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
+      "type": "package",
+      "path": "microsoft.csharp/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.0.1.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.6": {
+      "sha512": "JVlypPjlPqOEyAhET6pA7TqrK+Ya8TrYe2vvqsp62TYKS87oNuReoS7XpDFW0rrOsQo66G1yYf3K0E+lJHFHuw==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.3.1.6.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "System.CodeDom/5.0.0": {
+      "sha512": "JPJArwA1kdj8qDAkY2XGjSWoYnqiM7q/3yRNkt6n28Mnn95MuEGkZXUbPBf7qc3IjwrGY5ttQon7yqHZyQJmOQ==",
+      "type": "package",
+      "path": "system.codedom/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.CodeDom.dll",
+        "lib/net461/System.CodeDom.xml",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.xml",
+        "ref/net461/System.CodeDom.dll",
+        "ref/net461/System.CodeDom.xml",
+        "ref/netstandard2.0/System.CodeDom.dll",
+        "ref/netstandard2.0/System.CodeDom.xml",
+        "system.codedom.5.0.0.nupkg.sha512",
+        "system.codedom.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "ATF.Repository >= 2.0.1",
+      "CreatioSDK >= 8.0.3.1759",
+      "Newtonsoft.Json >= 13.0.1",
+      "System.CodeDom >= 5.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\maksi\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\maksi\\Documents\\clio1\\cliogate\\cliogate.csproj",
+      "projectName": "cliogate",
+      "projectPath": "C:\\Users\\maksi\\Documents\\clio1\\cliogate\\cliogate.csproj",
+      "packagesPath": "C:\\Users\\maksi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\maksi\\Documents\\clio1\\cliogate\\obj\\",
+      "projectStyle": "PackageReference",
+      "crossTargeting": true,
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\maksi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "targetAlias": "net472",
+        "dependencies": {
+          "ATF.Repository": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          },
+          "CreatioSDK": {
+            "target": "Package",
+            "version": "[8.0.3.1759, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
+          "System.CodeDom": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

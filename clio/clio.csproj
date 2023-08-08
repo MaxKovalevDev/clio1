@@ -3,7 +3,8 @@
 	<PropertyGroup>
 	  <OutputType>Exe</OutputType>
 	  <TargetFramework>net6.0</TargetFramework>
-	  <PackAsTool>true</PackAsTool>
+		<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+		<PackAsTool>true</PackAsTool>
 	  <PackageId>clio</PackageId>
 	  <Company>creatio</Company>
 	  <Authors>creatio rnd team</Authors>

@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "8ZZg4h5Y9LM1YNCD0D4nT/5GfCDQMMKNJZzg8TCJJ/xHD76gK0cP+2pEnEpp8Di4VtYBTzJ1W/EXuJoXRxKqPg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\maksi\\Documents\\clio1\\cliogate\\cliogate.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maksi\\.nuget\\packages\\atf.repository\\2.0.1\\atf.repository.2.0.1.nupkg.sha512",
+    "C:\\Users\\maksi\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
+    "C:\\Users\\maksi\\.nuget\\packages\\common.logging\\3.4.1\\common.logging.3.4.1.nupkg.sha512",
+    "C:\\Users\\maksi\\.nuget\\packages\\common.logging.core\\3.4.1\\common.logging.core.3.4.1.nupkg.sha512",
+    "C:\\Users\\maksi\\.nuget\\packages\\creatio.client\\1.0.7\\creatio.client.1.0.7.nupkg.sha512",
+    "C:\\Users\\maksi\\.nuget\\packages\\creatiosdk\\8.0.3.1759\\creatiosdk.8.0.3.1759.nupkg.sha512",
+    "C:\\Users\\maksi\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
+    "C:\\Users\\maksi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.6\\microsoft.extensions.dependencyinjection.abstractions.3.1.6.nupkg.sha512",
+    "C:\\Users\\maksi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\maksi\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
