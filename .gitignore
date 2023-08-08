@@ -6,14 +6,11 @@
 ###################
 *.com
 *.class
-*.dll
 *.exe
 *.pdb
-*.dll.config
 *.cache
 *.suo
 # Include dlls if they're in the CommonReferences directory
-!*CommonReferences/*.dll
 !clio\clio\tools\nuget\nuget.exe 
 ####################
 # VS Upgrade stuff #
@@ -23,7 +20,6 @@ _UpgradeReport_Files/
 # Directories #
 ###############
 packages/
-bin/
 obj/
 TestResults/
 ###################
@@ -59,7 +55,6 @@ Thumbs.db
 *.userprefs
 
 # Build results
-[Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
@@ -67,7 +62,6 @@ x64/
 x86/
 build/
 bld/
-[Bb]in/
 [Oo]bj/
 
 # Visual Studo 2015 cache/options directory
